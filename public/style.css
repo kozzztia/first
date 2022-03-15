@@ -1,0 +1,19 @@
+.red{
+    border: 1px solid red;
+    width:100%;
+    height: auto;
+    text-align: center;
+}
+.list{
+    padding: 0px;margin: 0;
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.item{
+    padding: 2px 20px;
+    border: 1px solid red;
+}
