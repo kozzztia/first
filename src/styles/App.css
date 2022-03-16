@@ -1,0 +1,31 @@
+body{
+    background: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    display: flex;
+    justify-content: center;
+}
+.App{
+    min-width: 800px;
+    height: auto;
+
+
+}
+.post{
+    display: flex;
+    padding: 15px;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eb0c0c;
+}
+.red{
+    background: green;
+    margin-top: 5px;
+    padding: 5px;
+}

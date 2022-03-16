@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 
-const Header = function () {
-    const [count, setCount] = useState(0);
-    function letOne() {
-        setCount(count + 1)
-    }
-    function letTwo() {
-        setCount(count - 1)
-    }
+
+const Header = function (props) {
+    console.log(props);
+
     return (
-        <div className="red">
-            <h1>{count}</h1>
-            <button onClick={letOne}>push</button>
-            <button onClick={letTwo}>push</button>
-        </div>
+        <section className="post">
+            <div className="post__content">
+                <h1>{props.post.title}</h1>
+                <p>{props.post.body}</p>
+
+            </div>
+            <div className="post__btns">
+                <button className="post__btn">del</button>
+            </div>
+        </section>
 
     );
 }

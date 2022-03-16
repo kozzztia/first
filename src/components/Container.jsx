@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Container = function () {
+const Container = function (props) {
     const [touch, setTouch] = useState(0)
     function increment() {
         setTouch(touch + 1)
@@ -10,9 +10,9 @@ const Container = function () {
     }
     return (
         <section className="red">
-            <h1>Touch number = {touch}</h1>
-            <button onMouseEnter={increment}>Increment</button>
-            <button onMouseEnter={decrement}>Decrement</button>
+            <h1>{props.post.body} {props.post.number} = {touch}</h1>
+            <button style={{ background: 'yellow' }} onClick={increment}>Increment</button>
+            <button style={{ background: 'orange' }} onClick={decrement}>Decrement</button>
         </section>
     );
 };
