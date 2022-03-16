@@ -13,19 +13,45 @@ body{
 .App{
     min-width: 800px;
     height: auto;
+    border: 1px solid red;
+    padding: 20px;
 
 
+}
+.run{
+    background: yellow;
+    padding: 10px;
+}
+.title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.run__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.run__item{
+    padding: 4px;
+    border: 1px solid red;
 }
 .post{
+    padding :10px;
+    width :100%;
+    min-height: 120px;
     display: flex;
-    padding: 15px;
-    margin-top: 15px;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #eb0c0c;
+    border: 1px solid green;
+    margin-top:10px;
 }
-.red{
-    background: green;
-    margin-top: 5px;
+.post__content{
+
+}
+.post__btn{
     padding: 5px;
+}
+.post__text{
+    font-size: 20px;
 }

@@ -1,27 +1,37 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import Container from './components/Container';
+import PostItem from './components/PostItem';
 import PostList from './components/PostList';
+// import PostElement from './components/PostElement';
 import './styles/App.css';
+import './styles/List.css';
 
 
 function App() {
-  const [posts, setPosts] = useState([
-    { id: 'one', number: "1", body: "container" },
-    { id: 'two', number: "2", body: "container" },
-    { id: 'three', number: "3", body: "container" },
-    { id: 'four', number: "4", body: "container" },
-    { id: 'five', number: "5", body: "container" },
+  const [posts] = useState([
+    { id: 'start', name: 'Element', number: 0, },
+    { id: 'start1', name: 'Element', number: 1, },
+    { id: 'start2', name: 'Element', number: 2, },
+    { id: 'start3', name: 'Element', number: 3, },
+    { id: 'start4', name: 'Element', number: 4, },
+    { id: 'start5', name: 'Element', number: 5, },
+  ])
+  const [posts1] = useState([
+    { id: 'start', name: 'item', number: 0, },
+    { id: 'start1', name: 'item', number: 1, },
+    { id: 'start2', name: 'item', number: 2, },
+    { id: 'start3', name: 'item', number: 3, },
+    { id: 'start4', name: 'item', number: 4, },
+    { id: 'start5', name: 'item', number: 5, },
   ])
 
 
   return (
     <div className="App">
-      <Header post={{ id: 'post', title: "javaScript", body: "descriptions" }} />
-      {posts.map(post =>
-        <Container post={post} key={post.id} >red</Container>
-      )}
-      <PostList />
+      <PostItem />
+      <PostList posts={posts} title="list 1" />
+      <PostList posts={posts1} title="list 2" />
+
+
     </div>
   );
 }
