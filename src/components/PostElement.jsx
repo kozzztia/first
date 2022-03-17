@@ -9,7 +9,7 @@ const PostElement = (props) => {
             <div className="post">
 
                 <div className="post__content">
-                    <h1 className="title">{props.post.name}</h1>
+                    <h1 className="title">{props.post.name} {props.post.id}</h1>
                     <div className="post__text">
                         <p>loremLorem text for fishing</p>
                     </div>
